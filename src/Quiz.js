@@ -18,7 +18,7 @@ export default function Quiz(props) {
   console.log(quizData);
 
   const quizQA = quizData.map((qa) => (
-    <Question question={qa.question} key={qa.question} />
+    <Question allData={qa} question={qa.question} key={qa.question} />
   ));
 
   const quizStyles = {
