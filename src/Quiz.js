@@ -14,11 +14,12 @@ export default function Quiz(props) {
     }
     getData();
   }, []);
-  console.log("this", quizData);
 
-  //   const quizQA = quizData.map(qa => (
-  //       <Question question={}
-  //   ));
+  console.log(quizData);
+
+  const quizQA = quizData.map((qa) => (
+    <Question question={qa.question} key={qa.question} />
+  ));
 
   const quizStyles = {
     display: props.showLanding ? "none" : "flex",
@@ -26,11 +27,7 @@ export default function Quiz(props) {
 
   return (
     <div className="quiz-container" style={quizStyles}>
-      <Question />
-      <Question />
-      <Question />
-      <Question />
-      <Question />
+      {quizQA}
       <button className="check-btn">Check answers</button>
     </div>
   );

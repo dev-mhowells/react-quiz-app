@@ -9,6 +9,12 @@ p {
   margin: 0;
 }
 
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .landing {
   height: 100vh;
   color: #293264;
@@ -34,6 +40,8 @@ p {
 
 .quiz-container {
   height: 100vh;
+  max-width: 700px;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
