@@ -31,3 +31,38 @@ p {
   border-radius: 15px;
   cursor: pointer;
 }
+
+.quiz-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-box {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.answer {
+  width: 70px;
+  height: 25px;
+  border: 1px solid #4d5b9e;
+  box-sizing: border-box;
+  border-radius: 7.94239px;
+  background: transparent;
+}
+
+.check-btn {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  width: 180px;
+  height: 45px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 35px;
+}

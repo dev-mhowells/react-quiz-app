@@ -1,24 +1,27 @@
 import React from "react";
+import Landing from "./Landing";
+import Quiz from "./Quiz";
+
+// async function getData() {
+//   const res = await fetch(
+//     "https://opentdb.com/api.php?amount=5&category=20&difficulty=easy&type=multiple"
+//   );
+//   const data = await res.json();
+//   console.log(data);
+// }
+// getData();
 
 export default function App() {
-  const [showLanding, setShowLanding] = React.useState(true);
+  const [showLanding, setShowLanding] = React.useState(false);
 
   function startQuiz() {
     setShowLanding(false);
   }
-  console.log(showLanding);
-
-  const styles = {
-    display: showLanding ? "flex" : "none",
-  };
 
   return (
-    <div className="landing" style={styles}>
-      <h1 className="title">Quizzical</h1>
-      <p className="description">Some description if needed</p>
-      <button className="start-btn" onClick={startQuiz}>
-        Start quiz
-      </button>
+    <div className="app-container">
+      <Landing startQuiz={startQuiz} showLanding={showLanding} />
+      <Quiz showLanding={showLanding} />
     </div>
   );
 }
