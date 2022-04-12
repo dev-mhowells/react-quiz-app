@@ -1,0 +1,33 @@
+body {
+  background-color: #f5f7fb;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.landing {
+  height: 100vh;
+  color: #293264;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing > * {
+  margin-top: 20px;
+}
+
+.start-btn {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  border: none;
+  width: 193px;
+  height: 52px;
+  border-radius: 15px;
+  cursor: pointer;
+}
