@@ -1,7 +1,8 @@
 import React from "react";
 
 export default function Landing(props) {
-  const landingStyles = {
+  
+    const landingStyles = {
     display: props.showLanding ? "flex" : "none",
   };
 

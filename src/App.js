@@ -12,7 +12,7 @@ import Quiz from "./Quiz";
 // getData();
 
 export default function App() {
-  const [showLanding, setShowLanding] = React.useState(false);
+  const [showLanding, setShowLanding] = React.useState(true);
 
   function startQuiz() {
     setShowLanding(false);

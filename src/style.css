@@ -56,11 +56,10 @@ p {
 }
 
 .answer {
-  width: 70px;
-  height: 25px;
+  padding: 10px 20px;
   border: 1px solid #4d5b9e;
   box-sizing: border-box;
-  border-radius: 7.94239px;
+  border-radius: 1em;
   background: transparent;
 }
 
